@@ -1,0 +1,44 @@
+/* Base styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #5fbeeb; /* Light blue background */
+  }
+  
+  /* Gallery container */
+  .gallery-container {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #e6f7ff;
+  }
+  
+  .gallery-container h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  /* Gallery layout */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Image styling */
+  .gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(226, 36, 201, 0.1);
+  }
+  
+  /* Hover effect */
+  .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(194, 108, 216, 0.2);
+  }
+  
